@@ -5,6 +5,9 @@ body {
   font-size: 0.8rem;
   height: 100%;
 }
+.logo {
+  max-width: 105px;
+}
 h1 {
   font-weight: 600 !important;
 }
@@ -309,15 +312,22 @@ li h6:hover {
 }
 
 /* Services */ /* Services */ /* Services */ /* Services */ /* Services */ /* Services */ /* Services */ /* Services */ /* Services */ /* Services */ /* Services */ /* Services */ /* Services */ /* Services */ /* Services */
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .card {
   background-color: transparent;
   height: 150px;
+  width: 700px;
   color: white;
   margin-bottom: 10px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.2);
 }
-
+.container-1 {
+  margin-right: 10px;
+}
 .bg-img {
   opacity: 0.2;
   position: absolute;
@@ -326,6 +336,9 @@ li h6:hover {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.card-text {
+  font-size: 0.8em;
 }
 /*.bg-img on touch change opacity*/
 .card:hover img {
@@ -361,7 +374,7 @@ li h6:hover {
   display: none !important;
 }
 .contenedor-lista-detalle {
-  padding-left: 10%;
+  padding-left: 2%;
   padding-right: 10%;
 }
 
@@ -381,9 +394,7 @@ li h6:hover {
     flex: 0 0 90% !important;
     max-width: 90% !important;
   }
-  .general-container {
-    display: none;
-  }
+
   #services-dropdown-container {
     display: none !important;
   }
@@ -421,10 +432,17 @@ li h6:hover {
     display: none;
   }
   .general-container {
-    display: block;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    width: 90vw;
   }
   .service-footer-mobile {
     position: relative !important;
@@ -441,9 +459,7 @@ li h6:hover {
     display: none;
   }
   .general-container {
-    display: block;
     display: flex;
-    flex-wrap: nowrap;
   }
   .slider-mobile {
     display: block !important;
@@ -571,6 +587,10 @@ li h6:hover {
 /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */ /* Contact page */
 .contact-main {
   margin-bottom: 10vh;
+}
+.contact-details {
+  display: flex;
+  justify-content: space-around !important;
 }
 
 @media (min-width: 768px) {
