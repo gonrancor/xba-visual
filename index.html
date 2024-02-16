@@ -30,8 +30,8 @@
       href="path/to/font-awesome/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./style/style.css" />
-    <link rel="stylesheet" href="/style/glide.core.css">
-    <link rel="stylesheet" href="/style/glide.theme.css">
+    <link rel="stylesheet" href="./style/glide.core.css">
+    <link rel="stylesheet" href="./style/glide.theme.css">
   </head>
   <body class="bodystyle-index">
     <div class="container-fluid p-0">
@@ -192,13 +192,14 @@
         type: 'carousel',
         perView: 2,
         autoplay: 5000,
+        focusat: 'center',
         breakpoints: {
           800: {
             perView: 1
           },
         }
       }
-      new Glide('.glide', configu).mount().mount({autoplay});
+      new Glide('.glide', configu).mount().mount({autoplay}).mount({anchors});
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
