@@ -10,7 +10,6 @@ function showSideMenu() {
   main.classList.remove("col-10");
   main.classList.add("col-lg-10");
   document.body.classList.add("bodystyle");
-  whatsappContainer.classList.add("d-none");
 }
 
 function hideSideMenu() {
@@ -81,12 +80,4 @@ lightbox.option({
   resizeDuration: 200,
   wrapAround: true,
   disableScrolling: true,
-});
-
-document.querySelector(".btn-secondary").addEventListener("click", () => {
-  main.classList.remove("blurStyle");
-});
-
-document.querySelector(".modal").addEventListener("click", () => {
-  main.classList.remove("blurStyle");
 });
