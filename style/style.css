@@ -665,11 +665,11 @@ li h6:hover {
 
 .container-main-txt-index {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .carousel-phone {
   position: absolute;
-  top: 0;
+  top: 20vh;
   left: 0;
   width: 100%;
 }
@@ -682,8 +682,11 @@ li h6:hover {
   .glide__slide {
     margin: 0;
   }
-
+  .main-txt-index {
+    display: flex;
+    flex-direction: column;
+  }
   .container-main-txt-index {
-    display: block;
+    display: flex;
   }
 }
