@@ -142,11 +142,11 @@
               <div class="glide">
                 <div class="glide__track" data-glide-el="track">
                   <ul class="glide__slides">
-                    <li class="glide__slide img-glide"><img src="./img/SLIDER/003_Rosewood House.jpg" alt="Exterior house"></li>
+                    <li class="glide__slide img-glide"><img src="./img/SLIDER/005_Modern bathroom design.jpg" alt="Exterior house"></li>
                     <li class="glide__slide img-glide"><img src="./img/SLIDER/004_Rosewood kitchen.jpg" alt="kitchen design"></li>
                     <li class="glide__slide img-glide"><img src="./img/SLIDER/008_Luxury modern kitchen design.jpg" alt="luxury modern kitchen"></li>
                     <li class="glide__slide img-glide"><img src="./img/SLIDER/005_Modern bathroom design.jpg" alt="moder bathroom design"></li>
-                    <li class="glide__slide img-glide"><img src="./img/SLIDER/012_Designer kitchen furniture for catalogue..jpg" alt="kitchen furniture design"></li>
+                    <li class="glide__slide img-glide"><img src="./img/SLIDER/004_Rosewood kitchen.jpg" alt="kitchen furniture design"></li>
                   </ul>
                 </div>
               </div>
@@ -207,22 +207,22 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
-const configu = {
-  type: 'carousel',
-  perView: 1,
-  autoplay: 5000,
-  focusat: 'center',
-  peek: {
-    before: 5, // Espacio parcial antes de la diapositiva principal
-    after: 5, // Espacio parcial después de la diapositiva principal
-  },
-  gap: 5, // Espacio entre las diapositivas
-  breakpoints: {
-    800: {
-      perView: 1
-    },
-  }
-};
+      const configu = {
+        type: 'carousel',
+        perView: 1,
+        autoplay: 5000,
+        focusat: 'center',
+        peek: {
+          before: 200, // Espacio parcial antes de la diapositiva principal
+          after: 200, // Espacio parcial después de la diapositiva principal
+        },
+        gap: 5, // Espacio entre las diapositivas
+        breakpoints: {
+          800: {
+            perView: 1
+          },
+        }
+      };
       new Glide('.glide', configu).mount().mount({autoplay}).mount({anchors});
     </script>
     <script
