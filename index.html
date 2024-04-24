@@ -8,7 +8,6 @@
       content="DESIGN, STUDIO, RENDER, 3D, MODEL, RENDERING, ARCHITECTURAL, EXTERIOR RENDERING, FURNITURE, PRODUCT, ANIMATIONS, 360/VR, WEB DEVELOPMENT"
     />
     <title>xba studio</title>
-
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -24,7 +23,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="path/to/font-awesome/css/font-awesome.min.css"
@@ -142,11 +140,21 @@
               <div class="glide">
                 <div class="glide__track" data-glide-el="track">
                   <ul class="glide__slides">
-                    <li class="glide__slide img-glide"><img src="./img/SLIDER/005_Modern bathroom design.jpg" alt="Exterior house"></li>
-                    <li class="glide__slide img-glide"><img src="./img/SLIDER/004_Rosewood kitchen.jpg" alt="kitchen design"></li>
-                    <li class="glide__slide img-glide"><img src="./img/SLIDER/008_Luxury modern kitchen design.jpg" alt="luxury modern kitchen"></li>
-                    <li class="glide__slide img-glide"><img src="./img/SLIDER/005_Modern bathroom design.jpg" alt="moder bathroom design"></li>
-                    <li class="glide__slide img-glide"><img src="./img/SLIDER/004_Rosewood kitchen.jpg" alt="kitchen furniture design"></li>
+                    <li class="glide__slide img-glide"><img src="./img/img index/01.jpg" alt="Exterior house"></li>
+                    <li class="glide__slide img-glide"><img src="./img/img index/02.jpg" alt="kitchen design"></li>
+                    <li class="glide__slide img-glide"><img src="./img/img index/03.jpg" alt="luxury modern kitchen"></li>
+                    <li class="glide__slide img-glide"><img src="./img/img index/04.jpg" alt="moder bathroom design"></li>
+                    <li class="glide__slide img-glide"><img src="./img/img index/05.jpg" alt="kitchen furniture design"></li>
+                    <li class="glide__slide img-glide"><img src="./img/img index/06.jpg" alt="Exterior house"></li>
+                    <li class="glide__slide img-glide"><img src="./img/img index/07.jpg" alt="Exterior house"></li>
+                    <li class="glide__slide img-glide"><img src="./img/img index/08.jpg" alt="Exterior house"></li>
+                    <li class="glide__slide img-glide"><img src="./img/img index/09.jpg" alt="Exterior house"></li>
+                    <li class="glide__slide img-glide"><img src="./img/img index/10.jpg" alt="Exterior house"></li>
+                    <li class="glide__slide img-glide"><img src="./img/img index/11.jpg" alt="Exterior house"></li>
+                    <li class="glide__slide img-glide"><img src="./img/img index/12.jpg" alt="Exterior house"></li>
+                    <li class="glide__slide img-glide"><img src="./img/img index/13.jpg" alt="Exterior house"></li>
+                    <li class="glide__slide img-glide"><img src="./img/img index/14.jpg" alt="Exterior house"></li>
+                    <li class="glide__slide img-glide"><img src="./img/img index/15.jpg" alt="Exterior house"></li>
                   </ul>
                 </div>
               </div>
@@ -205,6 +213,12 @@
         </footer>
       </div>
     </div>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
       const configu = {
@@ -216,20 +230,15 @@
           before: 200, // Espacio parcial antes de la diapositiva principal
           after: 200, // Espacio parcial después de la diapositiva principal
         },
-        gap: 5, // Espacio entre las diapositivas
+        gap: 1, // Espacio entre las diapositivas
         breakpoints: {
           800: {
             perView: 1
           },
         }
       };
-      new Glide('.glide', configu).mount().mount({autoplay}).mount({anchors});
+      new Glide('.glide', configu).mount().mount({autoplay}).mount({anchors}).mount({image}).mount({peek});
     </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/main.js"></script>
+
   </body>
 </html>

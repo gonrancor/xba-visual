@@ -647,9 +647,6 @@ li h6:hover {
 }
 
 .glide__slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100%; /* Establece una altura del 100% para que todas las diapositivas tengan la misma altura */
   margin: 0 2px;
 }

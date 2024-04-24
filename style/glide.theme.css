@@ -57,7 +57,8 @@
 .glide__bullet:focus {
   outline: none;
 }
-.glide__bullet:hover, .glide__bullet:focus {
+.glide__bullet:hover,
+.glide__bullet:focus {
   border: 2px solid white;
   background-color: rgba(255, 255, 255, 0.5);
 }
